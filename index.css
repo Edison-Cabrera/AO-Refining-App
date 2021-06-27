@@ -5,88 +5,61 @@ body
 	padding: 5% 5% 5% 5%;
 }
 
-@media (min-width: 250px)
+@media (min-width: 200px)
 {
 	body
 	{
 		padding: 5% 5% 5% 5%;
 	}
 
-	.specsInputBar
-	{
-		max-width: 100%;
-	}
-
 	.specsInputBarTier
 	{
 		width: 80%;
 	}
-	.formTextSubTitleDiv,.formRadioBtnDiv
-	{
-		width: 30%;
-		text-align: left;
-	}
 
-	.yesInputBar,.noInputBar
+	.tierSpecializationDiv
 	{
-		width: 100%;
-		text-align: left;
+		padding: 1% 1% 1% 1%;
+		border-style: solid;
+		border-radius: 10px;
 	}
 }
 
-@media (min-width: 600px)
+@media (min-width: 800px)
 {
 	body
 	{
 		padding: 5% 10% 5% 10%;
 	}
 
-	.specsInputBar
-	{
-		max-width: 100%;
-	}
-
 	.specsInputBarTier
 	{
-		width: 50%;
+		width: 80%;
 	}
 
-	.formTextSubTitleDiv,.formRadioBtnDiv
+	.tierSpecializationDiv
 	{
-		width: 35%;
-		text-align: right;
-	}
-
-	.yesInputBar,.noInputBar
-	{
-		width: 85%;
-		text-align: right;
+		padding: 1% 1% 1% 1%;
+		border-style: solid;
+		border-radius: 10px;
+		width: 75%;
+		margin: auto;
 	}
 }
 
-@media (min-width: 1200px)
+@media (min-width: 1500px)
 {
-	.specsInputBar
-	{
-		max-width: 100%;
-	}
-
 	.specsInputBarTier
 	{
-		width: 30%;
+		width: 95%;
 	}
 
-	.formTextSubTitleDiv,.formRadioBtnDiv
+	.tierSpecializationDiv
 	{
-		width: 40%;
-		text-align: right;
-
+		padding: 1% 1% 1% 1%;
+		border-style: solid;
+		border-radius: 10px;
+		width: 35%;
+		margin: auto;
 	}
-
-	.yesInputBar,.noInputBar
-	{
-		width: 65%;
-		text-align: right;
-	}
-
 }
