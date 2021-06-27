@@ -24,6 +24,13 @@ body
 	.formTextSubTitleDiv,.formRadioBtnDiv
 	{
 		width: 30%;
+		text-align: left;
+	}
+
+	.yesInputBar,.noInputBar
+	{
+		width: 100%;
+		text-align: left;
 	}
 }
 
@@ -47,10 +54,17 @@ body
 	.formTextSubTitleDiv,.formRadioBtnDiv
 	{
 		width: 35%;
+		text-align: right;
+	}
+
+	.yesInputBar,.noInputBar
+	{
+		width: 85%;
+		text-align: right;
 	}
 }
 
-@media (min-width: 1500px)
+@media (min-width: 1200px)
 {
 	.specsInputBar
 	{
@@ -65,6 +79,14 @@ body
 	.formTextSubTitleDiv,.formRadioBtnDiv
 	{
 		width: 40%;
+		text-align: right;
+
+	}
+
+	.yesInputBar,.noInputBar
+	{
+		width: 65%;
+		text-align: right;
 	}
 
 }
