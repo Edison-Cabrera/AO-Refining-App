@@ -34,21 +34,7 @@ const baseSpecsCost =
 	"8.3": 2666
 };
 
-let t4Input;
-let t5Input;
-let t6Input;
-let t7Input;
-let t8Input;
-let tierToRefine;
-let currentFocusPoints;
-let refiningLocation;
-
-
-function calculateMaterials(currentFocusPoints, calculateFocusCost, refiningLocation)
-{
-	
-};
-
+/*
 function calculateFocusCost(t4Input, t5Input, t6Input, t7Input, t8Input, tierToRefine)
 {
 	let baseCost = baseSpecsCost[tierToRefine];
@@ -56,8 +42,8 @@ function calculateFocusCost(t4Input, t5Input, t6Input, t7Input, t8Input, tierToR
 	focusCost = baseCost * (0.5 ** quotient);
 	return parseInt(focusCost);
 	
-}
-
+}*/
+/*parameters should depend on userInput*/
 function focusCostEfficiency(t4Input, t5Input, t6Input, t7Input, t8Input, tierToRefine)
 {
 	let masteryFCE = (t4Input + t5Input + t6Input + t7Input + t8Input) * 30;
@@ -86,4 +72,18 @@ function focusCostEfficiency(t4Input, t5Input, t6Input, t7Input, t8Input, tierTo
 	return masteryFCE + specsFCE;
 };
 
-console.log(calculateFocusCost(1,1,1,1,1,"4.1"));
+
+function getQuotient(focusCostEfficiency)
+{
+	return focusCostEfficiency/10000;
+};
+
+function calculateFocusCost(tierToRefine, getQuotient)
+{
+	let baseCost = baseSpecsCost[tierToRefine];
+	let focusCost = baseCost * (0.5 ** getQuotient);
+	return parseInt(focusCost);
+};
+
+;
+console.log(calculateFocusCost("4.0",getQuotient(focusCostEfficiency(1,1,1,1,1,"4.0"))));
