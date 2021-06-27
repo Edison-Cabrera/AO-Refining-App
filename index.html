@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	 <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+
+	<title>Albion Refining Calculator</title>
+
+	<link rel="stylesheet" type="text/css" href="./index.css">
+</head>
+<body>
+	<div>
+		<div>
+			<h2>Albion Refining Calculator</h2>
+		</div>
+
+		<div>
+			<form action="">
+				<h5>Tier Specialization</h5>
+				<label for="t4Input">T4</label>
+				<input type="number" id="t4Input" name="t4Input">
+				<label for="t5Input">T5</label>
+				<input type="number" id="t5Input" name="t5Input">
+				<label for="t6Input">T6</label>
+				<input type="number" id="t6-input" name="t6Input">
+				<label for="t7Input">T7</label>
+				<input type="number" id="t7Input" name="t7Input">
+				<label for="t8Input">T8</label>
+				<input type="number" id="t8Input" name="t8Input">
+				<input type="button" value="Reset" name="" id="">
+				<input type="button" value="Save" name="" id="">
+			</form>
+		</div>
+
+		<div>
+			<form action="">
+				<h5>Focus Points</h5>
+				<h6>Craft with focus?</h6>
+
+				<input type="radio" name="withFocus" id="withFocus">
+				<label for="withFocus">Yes</label> <!-- Auto-hide or auto reveal once Yes is clicked -->
+					<label for="currentFocusPoints">Current Focus Points</label>
+					<input type="number" name="currentFocusPoints" id="currentFocusPoints">
+					<label for="tierToRefine">Tier to Refine</label>
+					<input type="text" name="tierToRefine" id="tierToRefine">
+					<label for="refiningLocation">Refining Location</label>
+					<select name="refiningLocation" id="refiningLocation">
+						<option value="royalCityBonus">Royal City with Bonus</option>
+						<option value="royalCityNoBonus">Royal City without Bonus</option>
+						<option value="royalIslandBonus">Royal Island with Bonus</option>
+						<option value="royalIslandNoBonus">Royal Island without Bonus</option>
+					</select>
+
+				<input type="radio" name="withOutFocus" id="withOutFocus">
+				<label for="withOutFocus">No</label> <!-- Auto-hide or auto reveal once No is clicked -->
+					<label for="refiningLocation">Refining Location</label>
+					<select name="refiningLocation" id="refiningLocation">
+						<option value="royalCityBonus">Royal City with Bonus</option>
+						<option value="royalCityNoBonus">Royal City without Bonus</option>
+						<option value="royalIslandBonus">Royal Island with Bonus</option>
+						<option value="royalIslandNoBonus">Royal Island without Bonus</option>
+					</select>
+
+				<input type="button" value="Save" name="" id="">
+			</form>
+		</div>
+
+	</div>
+
+	<!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
