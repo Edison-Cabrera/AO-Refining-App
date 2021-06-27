@@ -23,9 +23,17 @@ body
 		border-style: solid;
 		border-radius: 10px;
 	}
+
+	.focusPointsDiv
+	{
+		padding: 1% 1% 1% 3%;
+		border-style: solid;
+		border-radius: 10px;
+		margin: 10% auto auto auto;
+	}
 }
 
-@media (min-width: 800px)
+@media (min-width: 700px)
 {
 	body
 	{
@@ -45,6 +53,15 @@ body
 		width: 75%;
 		margin: auto;
 	}
+
+	.focusPointsDiv
+	{
+		padding: 1% 1% 1% 3%;
+		border-style: solid;
+		border-radius: 10px;
+		width: 75%;
+		margin: 5% auto auto auto;
+	}
 }
 
 @media (min-width: 1500px)
@@ -59,7 +76,16 @@ body
 		padding: 1% 1% 1% 1%;
 		border-style: solid;
 		border-radius: 10px;
-		width: 35%;
+		width: 55%;
 		margin: auto;
+	}
+
+	.focusPointsDiv
+	{
+		padding: 1% 1% 1% 3%;
+		border-style: solid;
+		border-radius: 10px;
+		width: 55%;
+		margin: 5% auto auto auto;
 	}
 }
