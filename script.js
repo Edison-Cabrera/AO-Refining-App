@@ -2,6 +2,14 @@ const royalCityBonus = [.367, .539];
 const royalCityNoBonus = [.152, .435];
 const royalIslandBonus = [.285, .497];
 const royalIslandNoBonus = [0, .371];
+const craftLocationBonuses = 
+{
+	royalCityBonus: [.367, .539],
+	royalCityNoBonus: [.152, .435],
+	royalIslandBonus: [.285, .497],
+	royalIslandNoBonus: [0, .371]
+};
+
 const baseSpecsCost =
 {
 	"4.0": 48,
@@ -32,9 +40,11 @@ let t6Input;
 let t7Input;
 let t8Input;
 let tierToRefine;
+let currentFocusPoints;
+let refiningLocation;
 
 
-function calculateMaterials(currentFocusPoints, totalSpecialization, tierToRefine)
+function calculateMaterials(currentFocusPoints, calculateFocusCost, refiningLocation)
 {
 	
 };
