@@ -11,6 +11,16 @@ body
 	{
 		padding: 5% 5% 5% 5%;
 	}
+
+	.specsInputBar
+	{
+		max-width: 100%;
+	}
+
+	.specsInputBarTier
+	{
+		width: 80%;
+	}
 }
 
 @media (min-width: 1000px)
@@ -19,5 +29,32 @@ body
 	{
 		padding: 5% 10% 5% 10%;
 	}
+
+	.specsInputBar
+	{
+		max-width: 100%;
+	}
+
+	.specsInputBarTier
+	{
+		width: 50%;
+	}
 }
 
+@media (min-width: 2000px)
+{
+	body
+	{
+		padding: 5% 10% 5% 10%;
+	}
+
+	.specsInputBar
+	{
+		max-width: 100%;
+	}
+
+	.specsInputBarTier
+	{
+		width: 30%;
+	}
+}
