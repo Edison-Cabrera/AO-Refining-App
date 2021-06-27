@@ -34,15 +34,6 @@ const baseSpecsCost =
 	"8.3": 2666
 };
 
-/*
-function calculateFocusCost(t4Input, t5Input, t6Input, t7Input, t8Input, tierToRefine)
-{
-	let baseCost = baseSpecsCost[tierToRefine];
-	let quotient = focusCostEfficiency(t4Input, t5Input, t6Input, t7Input, t8Input, tierToRefine) / 10000;
-	focusCost = baseCost * (0.5 ** quotient);
-	return parseInt(focusCost);
-	
-}*/
 /*parameters should depend on userInput*/
 function focusCostEfficiency(t4Input, t5Input, t6Input, t7Input, t8Input, tierToRefine)
 {
@@ -78,12 +69,11 @@ function getQuotient(focusCostEfficiency)
 	return focusCostEfficiency/10000;
 };
 
-function calculateFocusCost(tierToRefine, getQuotient)
+function totalFocusCost(tierToRefine, getQuotient)
 {
 	let baseCost = baseSpecsCost[tierToRefine];
 	let focusCost = baseCost * (0.5 ** getQuotient);
 	return parseInt(focusCost);
 };
 
-;
-console.log(calculateFocusCost("4.0",getQuotient(focusCostEfficiency(1,1,1,1,1,"4.0"))));
+console.log(totalFocusCost("4.0",getQuotient(focusCostEfficiency(1,1,1,1,1,"4.0"))));
