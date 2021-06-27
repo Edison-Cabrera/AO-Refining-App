@@ -62,14 +62,15 @@
 		<div class="d-flex flex-column text-center">
 			<form action="">
 				<h5 class="formTextTitle mt-3">Focus Points</h5>
-				<h6 class="text-left formTextSubTitle">Craft with focus?</h6>
+				<div class="formTextSubTitleDiv">
+					<h6 class="text-right formTextSubTitle">Craft with focus?</h6>
+				</div>
+				<div class="formRadioBtnDiv text-right">
+					<input type="radio" name="yesWithFocus" id="yesWithFocus">
+					<label for="yesWithFocus">Yes</label> <!-- Auto-hide or auto reveal once Yes is clicked -->
+				</div>
 
-				<div class="d-flex flex-column text-left">
-					<div>
-						<input type="radio" name="yesWithFocus" id="yesWithFocus">
-						<label for="yesWithFocus">Yes</label> <!-- Auto-hide or auto reveal once Yes is clicked -->
-					</div>
-
+				<div class="d-flex flex-column">
 					<div class="d-flex flex-column text-center">
 						<div class="p-1">
 							<label for="currentFocusPoints">Current Focus Points</label>
@@ -90,7 +91,7 @@
 						</div>
 					</div>
 
-					<div>
+					<div class="formRadioBtnDiv text-right">
 						<input type="radio" name="noWithOutFocus" id="noWithOutFocus">
 						<label for="noWithOutFocus">No</label> <!-- Auto-hide or auto reveal once No is clicked -->
 					</div>

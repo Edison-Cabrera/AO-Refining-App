@@ -21,9 +21,13 @@ body
 	{
 		width: 80%;
 	}
+	.formTextSubTitleDiv,.formRadioBtnDiv
+	{
+		width: 30%;
+	}
 }
 
-@media (min-width: 1000px)
+@media (min-width: 600px)
 {
 	body
 	{
@@ -39,15 +43,15 @@ body
 	{
 		width: 50%;
 	}
+
+	.formTextSubTitleDiv,.formRadioBtnDiv
+	{
+		width: 35%;
+	}
 }
 
-@media (min-width: 2000px)
+@media (min-width: 1500px)
 {
-	body
-	{
-		padding: 5% 10% 5% 10%;
-	}
-
 	.specsInputBar
 	{
 		max-width: 100%;
@@ -57,4 +61,10 @@ body
 	{
 		width: 30%;
 	}
+
+	.formTextSubTitleDiv,.formRadioBtnDiv
+	{
+		width: 40%;
+	}
+
 }
