@@ -76,4 +76,16 @@ function totalFocusCost(tierToRefine, getQuotient)
 	return parseInt(focusCost);
 };
 
-console.log(totalFocusCost("4.0",getQuotient(focusCostEfficiency(1,1,1,1,1,"4.0"))));
+let t4Input = document.getElementById('t4Input');
+let t5Input = document.getElementById('t5Input');
+let t6Input = document.getElementById('t6Input');
+let t7Input = document.getElementById('t7Input');
+let t8Input = document.getElementById('t8Input');
+
+
+let saveButton = document.getElementById('btn-save');
+
+saveButton.addEventListener('click', () => {
+	return console.log(totalFocusCost("4.0",getQuotient(focusCostEfficiency(t4Input.value, t5Input.value, t6Input.value, t7Input.value, t8Input.value,"4.0"))));
+})
+
