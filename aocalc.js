@@ -3,6 +3,7 @@ let t5Input = document.getElementById('t5Input');
 let t6Input = document.getElementById('t6Input');
 let t7Input = document.getElementById('t7Input');
 let t8Input = document.getElementById('t8Input');
+
 let tierToRefine = document.getElementById('tierToRefine');
 
 let submitBtn = document.getElementById('submitBtn');
