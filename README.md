@@ -1,11 +1,10 @@
-# AO-Refining-App
-## Albion Refining Calculator
+# Albion Online Refining Calculator App
 
-### This is my take on Albion Online Refining Calculator App
+### This is my take on Refining Calculator for Albion Online game
 
-How does Albion Online do refining calculations?
+##### How does Albion Online do refining calculations?
 
-First off, Albion Online relies on specs (specialization) of player.
+First off, Albion Online relies on *specs* (specialization) of player.
 Starting from Tier 4(t4) up to Tier 8(t8), you get specialization for each tier of materials when refining.
 Specialization is like levels you grind in most mmos.
 There is a minimum of 1 specs once you unlocked the tier and maximum of 100.
@@ -15,30 +14,49 @@ x.1 = common
 x.2 = rare
 x.3 = exceptional
 
-Aside from specs, refining needs "focus" as well. These are replenised every 3 days for a maximum of 30000 points. Using Focus Points also adds crafting bonus per location. See [crafting bonuses](#CBL).
+Aside from specs, refining needs **focus** as well. These are replenised every 3 days for a maximum of **30000** points.
+
+Using Focus Points also adds crafting bonus per location. See resource return rate per [location](#resource-return-rate).
 There is a focus cost for each refining per tier of materials. And the more specs you have, the less focus points you need to refine said materials.
 
 Each materials has a base cost per tier and enchantment.
-You can see base cost per tier per enchantment in: [base cost](#./constVariables.js)
+You can see base cost per tier per enchantment in: [base cost](#base-cost)
 
 Another value we need is the crafting bonus location. For this calculator, I removed the blackzone(bz) bonus in the constant variables. 
-Crafting bonuses have two values, one for not using focus and another for using focus. Basically, there is an additional bonus if players are crafting with focus.
+Resource return rate (rrr) have two values, one for not using focus and another for using focus. Basically, there is an additional bonus if players are crafting with focus.
 
-### CBL
-Crafting Bonus Location : [With Focus, Without Focus]
-royalCityBonus: [.367, .539],
-royalCityNoBonus: [.152, .435],
-royalIslandBonus: [.285, .497],
-royalIslandNoBonus: [0, .371]
+### Resource Return Rate   
+
+  | Crafting Bonus per Location | Without Focus | With Focus | 
+  | :-------------------------- | :-----------: | :--------: |    
+  | Royal City with Bonus       |      .367     |   .539     |   
+  | Royal City without Bonus    |      .152     |   .435     |     
+  | Royal Island with Bonus     |      .285     |   .497     |   
+  | Royal Island without Bonus  |        0      |   .371     |   
+  | Black Zone Hideout          |       .2      |    .46     |   
+
+### Materials Needed
 
 Finally, refining per tier needs an X amount of low tiered refined materials and an X an amount of raw materials that you want to refine. The quantity varies per tier. Below is the list:
+  
+  | Tier to Refine | Raw Materials | Refined Materials | 
+  | :------------- | :-----------: | :---------------: |    
+  |       T4       |      x2       |        x1         |   
+  |       T5       |      x3       |        x1         |     
+  |       T6       |      x4       |        x1         |   
+  |       T7       |      x5       |        x1         |   
+  |       T8       |      x5       |        x1         |   
 
-Tier to Refine || Raw materials || Refined Materials
-T4			===			2 T4 Raw Materials			===			1 T3 Refined Materials
-T5			===			3 T5 Raw Materials			===			1 T4 Refined Materials
-T6			===			4 T6 Raw Materials			===			1 T5 Refined Materials
-T7			===			5 T7 Raw Materials			===			1 T6 Refined Materials
-T8			===			5 T8 Raw Materials			===			1 T7 Refined Materials
+
+### Base Cost
+
+  | Tier | Common | Uncommon | Rare  | Exceptional | 
+  | :--: | :----: | :------: | :---: | :---------: |   
+  |  T4  |    48  |     89   |   143 |     239     |  
+  |  T5  |    89  |    160   |   269 |     461     |    
+  |  T6  |   160  |    284   |   487 |     844     |  
+  |  T7  |   284  |    500   |   866 |    1508     |  
+  |  T8  |   500  |    877   |  1527 |    2666     |  
 
 
 ### Formula
@@ -54,5 +72,5 @@ specificTierSpecs = tierToRefineSpecs * 250
 
 focusCostEfficiency = totalMastery + specificTierSpecs
 
-For the baseCost, we just need to take it from [base cost](#./constVariables.js).
+For the baseCost, we just need to take it from [base cost](#base-cost).
 
