@@ -15,7 +15,7 @@ x.1 = common
 x.2 = rare
 x.3 = exceptional
 
-Aside from specs, refining needs "focus" as well. These are replenised every 3 days for a maximum of 30000 points. Using Focus Points also adds crafting bonus per location. See [crafting bonus](#CBL).
+Aside from specs, refining needs "focus" as well. These are replenised every 3 days for a maximum of 30000 points. Using Focus Points also adds crafting bonus per location. See [crafting bonuses](#CBL).
 There is a focus cost for each refining per tier of materials. And the more specs you have, the less focus points you need to refine said materials.
 
 Each materials has a base cost per tier and enchantment.
@@ -24,7 +24,7 @@ You can see base cost per tier per enchantment in: [base cost](#./constVariables
 Another value we need is the crafting bonus location. For this calculator, I removed the blackzone(bz) bonus in the constant variables. 
 Crafting bonuses have two values, one for not using focus and another for using focus. Basically, there is an additional bonus if players are crafting with focus.
 
-#CBl
+### CBL
 Crafting Bonus Location : [With Focus, Without Focus]
 royalCityBonus: [.367, .539],
 royalCityNoBonus: [.152, .435],
