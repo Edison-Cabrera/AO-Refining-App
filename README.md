@@ -1,10 +1,8 @@
 # Albion Online Refining Calculator App
 
-### This is my take on Refining Calculator for Albion Online game
+### How does Albion Online do refining calculations?
 
-##### How does Albion Online do refining calculations?
-
-Disclaimer: To see output, check console.
+Disclaimer: This is my take on Refining Calculator for Albion Online game. To see output, check console.
 
 First off, Albion Online relies on *specs* (specialization) of player.
 Starting from Tier 4(t4) up to Tier 8(t8), you get specialization for each tier of materials when refining.
